@@ -46,7 +46,15 @@ class TodoItem extends React.Component {
           </button>
           <span style={completed ? completedStyle : null}>{title}</span>
         </div>
-        <input type="text" className={styles.textInput} style={editMode} />
+        <input
+          type="text"
+          className={styles.textInput}
+          style={editMode}
+          value={title}
+          onChange={e => {
+            console.log(e.target.value, id)
+          }}
+        />
       </li>
     );
   }
