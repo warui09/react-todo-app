@@ -59,6 +59,10 @@ class TodoContainer extends React.Component {
     });
   };
 
+  setUpdate = (upDatedTitle, id) => {
+    console.log(upDatedTitle, id);
+  };
+
   render() {
     return (
       <div className="container">
