@@ -1,5 +1,5 @@
-import "./styles.css";
-import TodoContainer from "./components/TodoContainer";
+import "../App.css";
+import TodoContainer from "./TodoContainer";
 
 export default function App() {
   return (
